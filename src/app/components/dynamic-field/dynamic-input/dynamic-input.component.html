@@ -1,4 +1,8 @@
 <form [formGroup]="formName">
-    <label>{{field.label}}</label>
-    <input [type]="field.type" [formControlName]="field.fieldName"/>
+  <!-- <label>{{field.label}}</label>
+    <input [type]="field.type" [formControlName]="field.fieldName"/> -->
+  <mat-form-field>
+    <mat-label>{{ field.label }}</mat-label>
+    <input matInput [formControlName]="field.fieldName" />
+  </mat-form-field>
 </form>

@@ -1,5 +1,5 @@
 <form [formGroup]="formName">
-    <div>{{field.label}}</div>
+  <!-- <div>{{field.label}}</div>
     <label *ngFor="let option of field.options">
 
         <label ngFor="let option of field.options">
@@ -10,5 +10,17 @@
             >
             {{option.label}}
         </label>
-    </label>
+    </label> -->
+  <label [id]="field.fieldName">{{ field.label }}</label>
+  <mat-radio-group
+    [attr.aria-labelledby]="field.fieldName"
+    [formControlName]="field.fieldName"
+  >
+    <mat-radio-button
+      *ngFor="let option of field.options"
+      [value]="option.value"
+    >
+      {{ option.label }}
+    </mat-radio-button>
+  </mat-radio-group>
 </form>

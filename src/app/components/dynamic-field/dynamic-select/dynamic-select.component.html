@@ -1,9 +1,16 @@
 <form [formGroup]="formName">
-
-    <label>{{field.label}}:</label>
+  <!-- <label>{{field.label}}:</label>
     <select [formControlName]="field.fieldName">
         <option *ngFor="let option of field.options" [value]="option.value">
             {{option.label}}
         </option>
-    </select>
+    </select> -->
+  <mat-form-field>
+    <mat-label>{{ field.label }}</mat-label>
+    <mat-select [formControlName]="field.fieldName" [attr.name]="field.label">
+      <mat-option *ngFor="let option of field.options" [value]="option.value">
+        {{ option.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 </form>
