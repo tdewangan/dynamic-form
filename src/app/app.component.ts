@@ -80,5 +80,10 @@ export class AppComponent {
         },
       ],
     },
+    comment: {
+      type: 'textarea',
+      value: '',
+      label: 'Leave a comment',
+    },
   };
 }

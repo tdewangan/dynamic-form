@@ -1,16 +1,4 @@
 <form [formGroup]="formName">
-  <!-- <div>{{field.label}}</div>
-    <label *ngFor="let option of field.options">
-
-        <label ngFor="let option of field.options">
-            <input type="radio"
-                   [name]="field.fieldName"
-                   [formControlName]="field.fieldName"
-                   [value]="option.value"
-            >
-            {{option.label}}
-        </label>
-    </label> -->
   <label [id]="field.fieldName">{{ field.label }}</label>
   <mat-radio-group
     [attr.aria-labelledby]="field.fieldName"

@@ -12,6 +12,7 @@ import { DynamicSelectComponent } from '../dynamic-field/dynamic-select/dynamic-
 import { DynamicRadioComponent } from '../dynamic-field/dynamic-radio/dynamic-radio.component';
 import { DynamicCheckboxComponent } from '../dynamic-field/dynamic-checkbox/dynamic-checkbox.component';
 import { DynamicDatepickerComponent } from './dynamic-datepicker/dynamic-datepicker.component';
+import { DynamicTextareaComponent } from './dynamic-textarea/dynamic-textarea.component';
 
 @Component({
   selector: 'app-dynamic-field',
@@ -74,6 +75,10 @@ export class DynamicFieldComponent implements AfterViewInit {
     {
       name: 'checkbox',
       component: DynamicCheckboxComponent,
+    },
+    {
+      name: 'textarea',
+      component: DynamicTextareaComponent,
     },
   ];
 }

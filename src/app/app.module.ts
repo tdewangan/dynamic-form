@@ -31,6 +31,7 @@ import { DynamicInputComponent } from './components/dynamic-field/dynamic-input/
 import { DynamicErrorComponent } from './components/dynamic-field/dynamic-error/dynamic-error.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DynamicDatepickerComponent } from './components/dynamic-field/dynamic-datepicker/dynamic-datepicker.component';
+import { DynamicTextareaComponent } from './components/dynamic-field/dynamic-textarea/dynamic-textarea.component';
 
 const MaterialModules = [
   MatToolbarModule,
@@ -62,6 +63,7 @@ const MaterialModules = [
     DynamicInputComponent,
     DynamicErrorComponent,
     DynamicDatepickerComponent,
+    DynamicTextareaComponent,
   ],
   imports: [
     BrowserModule,
