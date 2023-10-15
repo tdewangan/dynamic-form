@@ -20,6 +20,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 import { DynamicFormComponent } from './dynamic-form/dynamic-form.component';
 import { DynamicFieldComponent } from './components/dynamic-field/dynamic-field.component';
@@ -29,7 +30,7 @@ import { DynamicSelectComponent } from './components/dynamic-field/dynamic-selec
 import { DynamicInputComponent } from './components/dynamic-field/dynamic-input/dynamic-input.component';
 import { DynamicErrorComponent } from './components/dynamic-field/dynamic-error/dynamic-error.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
+import { DynamicDatepickerComponent } from './components/dynamic-field/dynamic-datepicker/dynamic-datepicker.component';
 
 const MaterialModules = [
   MatToolbarModule,
@@ -60,6 +61,7 @@ const MaterialModules = [
     DynamicSelectComponent,
     DynamicInputComponent,
     DynamicErrorComponent,
+    DynamicDatepickerComponent,
   ],
   imports: [
     BrowserModule,
