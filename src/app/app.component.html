@@ -1,8 +1,11 @@
 <h1>Register</h1>
-<app-dynamic-form [model]="model"></app-dynamic-form>
-<!-- <form [formGroup]="registerForm">
-  <div *ngFor="let field of fields">
-         <label>{{field}}</label>
-  <input type="text" [formControlName]="field" />
-  </div>
-</form> -->
+<div [ngStyle]="{ width: '100%' }">
+  <app-dynamic-form
+    [model]="model"
+    [styles]="{
+      display: 'grid',
+      'grid-template-columns': 'repeat(3, 1fr)',
+      gap: '10px'
+    }"
+  ></app-dynamic-form>
+</div>

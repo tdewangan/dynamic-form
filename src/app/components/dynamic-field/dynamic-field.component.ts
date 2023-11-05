@@ -17,6 +17,7 @@ import { DynamicTextareaComponent } from './dynamic-textarea/dynamic-textarea.co
 @Component({
   selector: 'app-dynamic-field',
   templateUrl: './dynamic-field.component.html',
+  styleUrls: ['./dynamic-field.component.scss']
 })
 export class DynamicFieldComponent implements AfterViewInit {
   @Input() field;
