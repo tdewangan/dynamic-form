@@ -9,7 +9,6 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
 @Component({
   selector: 'app-dynamic-error',
   templateUrl: './dynamic-error.component.html',
-  styleUrls: ['./dynamic-error.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DynamicErrorComponent implements OnInit {

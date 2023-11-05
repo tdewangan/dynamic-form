@@ -9,7 +9,6 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
 @Component({
   selector: 'app-dynamic-checkbox',
   templateUrl: './dynamic-checkbox.component.html',
-  styleUrls: ['./dynamic-checkbox.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DynamicCheckboxComponent implements OnInit {

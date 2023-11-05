@@ -4,7 +4,6 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
 @Component({
   selector: 'app-dynamic-textarea',
   templateUrl: './dynamic-textarea.component.html',
-  styleUrls: ['./dynamic-textarea.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DynamicTextareaComponent {

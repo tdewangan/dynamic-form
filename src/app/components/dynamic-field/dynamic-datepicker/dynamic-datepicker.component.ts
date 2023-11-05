@@ -4,7 +4,6 @@ import { FormGroup, FormGroupDirective } from '@angular/forms';
 @Component({
   selector: 'app-dynamic-datepicker',
   templateUrl: './dynamic-datepicker.component.html',
-  styleUrls: ['./dynamic-datepicker.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DynamicDatepickerComponent {
